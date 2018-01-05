@@ -1,0 +1,9 @@
+version: '3'
+services:
+  asterisk:
+    build:
+      context: .
+      args:
+        VERSION_OPENRC: 3.7
+        VERSION_ASTERISK: 15.1.5-r1
+    image: asterisk-alpine:15.1.5-r1
